@@ -1,0 +1,171 @@
+  html * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #fff6ee;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color : black;
+    width: 100%;
+  }
+
+  img {
+    max-width:100%;
+    height:100%;
+    border:0px solid black;
+  }
+
+  #p-merci-v {
+    max-width: 100%;
+    max-height: 100%;
+   align-items:center;
+   background: #fff6ee;
+
+  }
+
+  #left, #right {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width:50%;
+    overflow: hidden;
+  }
+
+
+
+  #left {
+    background-color: #fff6ee;
+    left: 0;
+  }
+
+  #right {
+    background: #fff6ee;
+    right : 0;
+  }
+
+
+  #contact {
+    position: fixed;
+    left : 30px;
+    bottom:20px;
+    z-index: 1;
+    max-width: 100px;
+    font-size : 20px;
+
+  }
+
+  #paoline {
+    position: fixed;
+    left: 30px;
+    top: 5px;
+    z-index: 1;
+    max-width: 100px;
+    font-size : 60px;
+
+  }
+
+  #sotar {
+    position: fixed;
+    left: 30px;
+    top:5px;
+    z-index: 1;
+    max-width: 100px;
+    font-size : 60px;
+
+  }
+
+  #projets {
+    position: fixed;
+    left: 30px;
+    bottom:90px;
+    z-index: 1;
+    max-width: 50px;
+    font-size : 20px;
+  }
+
+  #cv {
+    position: fixed;
+    left: 30px;
+    bottom:55px;
+    z-index: 1;
+    max-width: 50px;
+    font-size : 20px;
+  }
+
+
+  .menu {
+    display: none;
+    position: fixed;
+    left:16px;
+    top:160px;
+    background-color: #fff6ee;
+    border: 4px solid black;
+    width: 300px;
+    z-index: 1;
+  }
+  .interieur {
+    position:absolute;
+    top: 0;
+    bottom:0;
+    overflow-y:scroll;
+    left: 16px;
+    right: -16px;
+    padding: 32px 0;
+  }
+
+
+
+  .bloc {
+    background: #fff6ee;
+    margin: auto;
+    position: relative;
+    left: -16px;
+    margin-bottom:32px;
+    width: 65%;
+    border-color: black;
+    border-width: 2px;
+  }
+
+  #left .bloc {
+    margin-right: 16px;
+  }
+
+  #right .bloc {
+    margin-left: 16px;
+  }
+
+  .grand {
+    height:200%;
+    display:flex;
+    align-items:center;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  .bloc {
+    margin-bottom: 4em;
+  }
+
+  .bloc p {
+    display: none;
+  }
+
+  .ouvert p {
+    display: block;
+  }
+
+  .details img {
+    margin-bottom: 4em;
+  }
+
+  .hidden {
+    display:none;
+  }
