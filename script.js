@@ -1,8 +1,43 @@
 (function(context) {
+  var projets = document.querySelector('.projets');
+  var ensemble = document.querySelector('.ensemble');
+
+  var deux = document.querySelector('.deux');
+  var un = document.querySelector('.un');
+
+  var quatre = document.querySelector('.quatre');
+  var trois = document.querySelector('.trois');
+
   var left = document.querySelector('#left');
   var right = document.querySelector('#right');
   var vignettes = document.querySelectorAll('.vignettes .bloc');
   var details = document.querySelectorAll('.details .bloc');
+
+  if(projets !== null) {
+   projets.addEventListener('click', function() {
+   ensemble.classList.toggle('open');
+   un.classList.remove('open');
+   trois.classList.remove('open');
+   });
+ }
+
+ if(deux !== null) {
+  deux.addEventListener('click', function() {
+  un.classList.toggle('open');
+  trois.classList.remove('open');
+  ensemble.classList.remove('open');
+
+  });
+}
+
+if(quatre !== null) {
+ quatre.addEventListener('click', function() {
+ trois.classList.toggle('open');
+ ensemble.classList.remove('open');
+ un.classList.remove('open');
+
+ });
+}
 
   var vignettesLeft = document.querySelectorAll('#left .vignettes .bloc');
   var detailsLeft = document.querySelectorAll('#left .details .bloc');
@@ -40,8 +75,10 @@
     Array.from(details).forEach(function(d) {
       if (d.getAttribute('id') !== detail.getAttribute('id')) {
         d.classList.add('hidden');
+        d.classList.remove('ouvert');
       } else {
         d.classList.remove('hidden');
+        d.classList.add('ouvert');
       }
     });
   };
