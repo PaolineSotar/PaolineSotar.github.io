@@ -1,7 +1,19 @@
 (function(context) {
   var projets = document.querySelector('.projets');
+  var liensProjets = document.querySelectorAll('.menuprojets li');
+  Array.from(liensProjets).forEach(function (lien) {
+    lien.addEventListener('click', function() {
+      var id = lien.getAttribute('id').replace('-l', '-v');
+      var vignette = document.getElementById(id);
+      vignette.dispatchEvent(new Event('click'));
+    });
+  });
   var ensemble = document.querySelector('.ensemble');
-
+  var lien_menu = document.querySelector('.menu-lien');
+  lien_menu.addEventListener('click', function() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('ouvert');
+  });
   var deux = document.querySelector('.deux');
   var un = document.querySelector('.un');
 
@@ -65,8 +77,11 @@ if(quatre !== null) {
     Array.from(vignettes).forEach(function(v) {
       if (v.getAttribute('id') !== vignette.getAttribute('id')) {
         v.classList.add('hidden');
+        v.classList.remove('ouvert');
+
       } else {
         v.classList.remove('hidden');
+        v.classList.add('ouvert');
       }
     });
   };
