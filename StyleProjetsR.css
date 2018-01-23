@@ -369,11 +369,14 @@ margin-top: 0px;
 
   a {
   text-decoration: none;
-  color: black;
   }
 
   .bloc {
     margin-bottom: 4em;
+  }
+
+  .bloc p {
+    display: none;
   }
 
   .ouvert p {
@@ -383,17 +386,9 @@ margin-top: 0px;
   .details img {
     margin-bottom: 4em;
   }
-/*
+
   .hidden {
     display:none;
-  }
-
-  .bloc p {
-      display: none;
-  }*/
-
-  .ensemble .menuprojets{
-    display: none;
   }
 
   .menuprojets {
@@ -410,6 +405,9 @@ margin-top: 0px;
     cursor: pointer;
 
   }
+    .ensemble .menuprojets{
+      display: none;
+    }
 
   .ensemble.open .menuprojets{
     display: block;
@@ -499,7 +497,6 @@ margin-top: 0px;
         .menu-lien {
           display: none;
         }
-
         @media screen and (max-width: 560px) {
           .paolinetitre {
             line-height: 1;
