@@ -21,6 +21,7 @@
     font-family: 'Alegreya Sans', sans-serif;
     color : black;
     width: 100%;
+    overflow: hidden;
   }
 
   img {
@@ -29,16 +30,7 @@
     margin-top: 30px;
     border:0px solid black;
     justify-content: flex-end;
-
-  }
-
-  #p-merci-v {
-    max-width: 100%;
-    max-height: 100%;
-   align-items:center;
-   background: white;
-
-  }
+}
 
   #left, #right {
     position:absolute;
@@ -49,19 +41,23 @@
     overflow: hidden;
   }
 
-
-
   #left {
     background-color: white;
-    left: -40px;
-  }
+    left: -40px;}
+
+    #left .bloc {
+      margin-right: 16px;
+    }
+
+    #right .bloc {
+      margin-left: 16px;
+    }
+
 
   #right {
     background: white;
     right : -145px;
   }
-
-
 
   .paolinetitre {
     position: fixed;
@@ -72,7 +68,6 @@
     margin-bottom: 0px;
   }
 
-
   .projets {
     position: fixed;
     left: 32px;
@@ -80,8 +75,6 @@
     z-index: 1;
     max-width: 200px;
   }
-
-
 
   .imagemenuprojet {
     margin-top: -10px;
@@ -93,14 +86,6 @@
   }
 
   .imagemenucontact {
-    bottom: 70px;
-    height: 100%;
-    width : 100%;
-    text-transform: uppercase;
-    font-size: 10px;
-  }
-
-  .dg {
     bottom: 70px;
     height: 100%;
     width : 100%;
@@ -141,7 +126,6 @@
     right: -16px;
     padding: 32px 0;
   }
-
 
   .navigation0 {
     margin: 0px;
@@ -253,13 +237,7 @@
 .bloc.ouvert {
   margin-bottom:0px;
 }
-  #left .bloc {
-    margin-right: 16px;
-  }
 
-  #right .bloc {
-    margin-left: 16px;
-  }
 
   .kan {
   margin-top: 25px;

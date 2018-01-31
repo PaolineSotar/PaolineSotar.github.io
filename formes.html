@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Formes</title>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleProjetsL.css">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
     <link rel="icon" href="favicon.png">
@@ -57,19 +57,19 @@
       </div> </div>
       <div class="menuprojets">
         <ul>
-        <li id="p-kandinski-l">kandinsky</li>
-        <li id="p-tacet-l">tacet</li>
-        <li id="p-pulitzer-l">pulitzer</li>
-        <li id="p-merci-l">merci</li>
-        <li id="p-formes-l">formes</li>
-        <li id="p-soundeat2-l">soundEat #2</li>
-        <li id="p-soundeat-l">soundEat #1</li>
-        <li id="p-poster-l">pornster</li>
-        <li id="p-mots-l">lettres libres</li>
-        <li id="p-circuit-l">court-circuit</li>
-        <li id="p-mundo-l">cccb</li>
-        <li id="p-atelier-l"> top chef </li>
-        <li id="p-savoirfaire-l"> savoir-faire</li>
+          <li id="p-kandinski-l"><a href="kandinski.html">kandinsky</li> </a>
+          <li id="p-tacet-l"><a href="tacet.html">tacet</li> </a>
+          <li id="p-pulitzer-l"><a href="pulitzer.html">pulitzer</li></a>
+          <li id="p-merci-l"><a href="merci.html">merci</li></a>
+          <li id="p-formes-l"><a href="formes.html">formes</li> </a>
+          <li id="p-soundeat2-l"><a href="soundeat2.html">soundEat #2</li></a>
+          <li id="p-soundeat-l"><a href="soundeat1.html">soundEat #1</li></a>
+          <li id="p-poster-l"><a href="poster.html">pornster</li></a>
+          <li id="p-mots-l"> <a href="lettres.html">lettres libres</li> </a>
+          <li id="p-circuit-l"><a href="circuit.html">court-circuit</li></a>
+          <li id="p-mundo-l"><a href="mundo.html">cccb</li></a>
+          <li id="p-atelier-l"> <a href="topchef.html">top chef </li></a>
+          <li id="p-savoirfaire-l"><a href="savoirfaire.html"> savoir-faire</li></a>
       </ul>
       </div> </section>
 
@@ -103,6 +103,21 @@
     </div> </section>
 
 </nav>
-
+<script src="./script.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var l = document.querySelector('#left .interieur');
+  var r = document.querySelector('#right .interieur');
+  r.scrollBottom = r.scrollHeight - r.getBoundingClientRect().height;
+  l.addEventListener('scroll', function(e) {
+    var scrollPercent = ((l.scrollBottom / (l.scrollHeight - l.getBoundingClientRect().height)).toFixed(2) * 100);
+    var newScroll = Math.abs((r.getBoundingClientRect().height - r.scrollHeight) / 100 * (100 - scrollPercent));
+    r.scrollTop = newScroll;
+  });
+  r.addEventListener('scroll', function(e) {
+    var scrollPercent = ((r.scrollTop / (r.scrollHeight - r.getBoundingClientRect().height)).toFixed(2) * 100);
+    var newScroll = Math.abs((l.getBoundingClientRect().height - l.scrollHeight) / 100 * (100 - scrollPercent));
+    l.scrollTop = newScroll;
+  });
+</script>
   </body>
 </html>
