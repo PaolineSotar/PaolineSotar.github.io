@@ -26,7 +26,7 @@
 
   img {
     width:100%;
-    height:100%;
+    height:auto;
     margin-top: 30px;
     border:0px solid black;
     justify-content: flex-end;
@@ -37,7 +37,7 @@
     top: 0;
     bottom: 0;
     height: 100%;
-    width:55%;
+    width:65%;
     overflow: hidden;
   }
 
@@ -50,13 +50,53 @@
     }
 
     #right .bloc {
-      margin-left: 16px;
+      margin-left: 60px;
     }
 
 
   #right {
     background: white;
     right : -145px;
+  }
+
+  #p-merci-v {
+    margin-top: 45px;
+  }
+
+  #p-pulitzer-v {
+    margin-top: 45px;
+  }
+
+  #p-formes-v {
+  margin-top: 45px;
+  }
+
+  #p-mots-v {
+  margin-top: 45px;
+  }
+
+  #p-atelier-v {
+  margin-top: 45px;
+  }
+
+  #p-soundeat-v {
+  margin-top: 45px;
+  }
+
+  #p-poster-v {
+    margin-top: 45px;
+  }
+
+  #p-mundo-v {
+  margin-top: 45px;
+  }
+
+  #p-circuit-v {
+    margin-top: 45px;
+  }
+
+  #p-demo-v {
+  margin-top: 45px;
   }
 
   .paolinetitre {
@@ -240,28 +280,32 @@
 
 
   .kan {
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
   .tacet {
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
   .pulitzer {
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
   .soundeat2 {
-  margin-top: 25px;
+  margin-top: 45px;
+  }
+
+  .savoirfaire {
+    margin-top: 45px;
   }
 
   .formes {
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
 
   .merci {
-  margin-top: 25px;
+  margin-top: 45px;
   }
 
   .mots {
@@ -360,6 +404,12 @@ margin-top: 0px;
 
   .details img {
     margin-bottom: 4em;
+  }
+
+  #p-tacet-v .bloc{
+    align-items: center;
+    justify-content: center;
+    top: 85px;
   }
 /*
   .hidden {
@@ -477,14 +527,28 @@ margin-top: 0px;
         .menu-lien {
           display: none;
         }
-
+        #left, #right {
+          width: 50%;
+        }
+        #left {
+          left: 0;
+        }
+        #left .bloc {
+          left: -16px;
+        }
+        #right .bloc {
+          left: 16px;
+        }
+        #right {
+          left: 50%;
+          right:auto;
+        }
         @media screen and (max-width: 560px) {
           .paolinetitre {
             line-height: 1;
             left: 14px;
             width: 100%;
             height: 7%;
-            background-color: white;
             align-items: center;
             top: 0px;
 
@@ -494,45 +558,64 @@ margin-top: 0px;
             right: 0;
           }
           #left .bloc, #right .bloc {
-            width: 50%;
+            width: 70%;
             margin: auto;
-            height: 50%
+            height: 50%;
           }
+
           #left .bloc {
-            left :40px;
+            margin-right:0;
           }
           #right .bloc {
-            right :400px;
+            margin-left:0;
           }
-          .menu section, .un, .deux, .menucontact, .projets, .menuprojets, .quatre {
+
+          .contact {
+            margin-top: -70px;
+          }
+
+          .menuprojets {
+            margin-top: -60px;
+          }
+
+          .apropos {
+            margin-top: -60px;
+          }
+          /*.menu section, .un, .deux, .menucontact, .projets, .menuprojets, .trois, .quatre {
             position:static;
           }
 
           .menu {
             position: fixed;
-            bottom: 200px;
+            bottom: 30px;
             z-index: 2;
-            padding: 0px;
+            padding: 10px;
             left:0px;
             width: 30%;
             height: 1%;
-            background-color: white; #fff6ee
+            background-color: none
           }
           .menu-lien {
             display: block;
-            font-size: 24px;
+            font-size: 14px;
           }
           .contenu-menu {
             display: none;
           }
           .menu.ouvert .contenu-menu {
             display: block;
-            margin-top: 16px;
+            margin-top: -158px;
           }
           .menuprojets {
             height:auto;
-          }
+          } */
           .details img {
             margin-bottom: 2em;
           }
         }
+
+/*
+.page-gauche #left .bloc {
+
+}
+*/

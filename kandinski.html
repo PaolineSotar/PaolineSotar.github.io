@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon.png">
   </head>
 
-  <body>
+  <body class="page-gauche">
     <div id="left">
           <div class="bloc" id="p-kandinski-v">
           <a href="index.html"><img src="kandinski/gif.gif" alt=""></a>
@@ -99,20 +99,5 @@
 
     </nav>
     <script src="./script.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      var l = document.querySelector('#left .interieur');
-      var r = document.querySelector('#right .interieur');
-      r.scrollBottom = r.scrollHeight - r.getBoundingClientRect().height;
-      l.addEventListener('scroll', function(e) {
-        var scrollPercent = ((l.scrollBottom / (l.scrollHeight - l.getBoundingClientRect().height)).toFixed(2) * 100);
-        var newScroll = Math.abs((r.getBoundingClientRect().height - r.scrollHeight) / 100 * (100 - scrollPercent));
-        r.scrollTop = newScroll;
-      });
-      r.addEventListener('scroll', function(e) {
-        var scrollPercent = ((r.scrollTop / (r.scrollHeight - r.getBoundingClientRect().height)).toFixed(2) * 100);
-        var newScroll = Math.abs((l.getBoundingClientRect().height - l.scrollHeight) / 100 * (100 - scrollPercent));
-        l.scrollTop = newScroll;
-      });
-    </script>
 </body>
 </html>
