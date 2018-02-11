@@ -72,7 +72,7 @@
   }
 
   #p-mots-v {
-  margin-top: 45px;
+  margin-top: 25px;
   }
 
   #p-atelier-v {
@@ -92,11 +92,15 @@
   }
 
   #p-circuit-v {
-    margin-top: 45px;
+    margin-top: 25px;
   }
 
   #p-demo-v {
-  margin-top: 45px;
+  margin-top: 25px;
+  }
+
+  #p-savoirfaire-v {
+    margin-top: 45px;
   }
 
   .paolinetitre {
@@ -571,7 +575,7 @@ margin-top: 0px;
           }
 
           .contact {
-            margin-top: -70px;
+            margin-top: -70px;  
           }
 
           .menuprojets {
