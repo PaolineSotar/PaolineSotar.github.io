@@ -2,12 +2,13 @@
 
 
 
-@font-face {
-    font-family: 'Garamond';
-    src: url('oooooo-webfont.woff2') format('woff2'),
-         url('oooooo-webfont.woff') format('woff');
+/*@font-face {
+    font-family: 'happy_times_at_the_ikobitalic';
+    src: url('happy-times-at-the-ikob_italic-webfont.woff2') format('woff2'),
+         url('happy-times-at-the-ikob_italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; */
+
 }
 
 
@@ -16,12 +17,30 @@
   }
 
   body {
-    background-color: white;
+    background-color: grey;
     font-size: 15px;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
     color : black;
     width: 100%;
     overflow: hidden;
+  }
+
+  h1 {
+  font-size: 30px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   img {
@@ -42,24 +61,28 @@
   }
 
   #left {
-    background-color: white;
+    background-color: grey;
     left: -40px;}
 
     #left .bloc {
-      margin-right: 16px;
+      margin-right: 0px;
     }
 
     #right .bloc {
-      margin-left: 60px;
+      margin-left: 90px;
     }
 
 
   #right {
-    background: white;
+    background: grey;
     right : -145px;
   }
 
   #p-merci-v {
+    margin-top: 45px;
+  }
+
+  #p-fantomes-v {
     margin-top: 45px;
   }
 
@@ -83,11 +106,19 @@
   margin-top: 45px;
   }
 
+  #p-soundeat2-v {
+  margin-top: 45px;
+  }
+
   #p-poster-v {
     margin-top: 45px;
   }
 
   #p-mundo-v {
+  margin-top: 45px;
+  }
+
+  #p-tacet-v {
   margin-top: 45px;
   }
 
@@ -103,7 +134,19 @@
     margin-top: 45px;
   }
 
+  #p-monomix-v {
+    margin-top: 45px;
+  }
+
+  #p-stage-v {
+    margin-top: 45px;
+  }
+
   #p-savoirfaire-v {
+    margin-top: 45px;
+  }
+
+  #p-mémoire-v {
     margin-top: 45px;
   }
 
@@ -111,69 +154,61 @@
   .paolinetitre {
     position: fixed;
     left: 32px;
-    top: 10px;
+    top: 20px;
     z-index: 1;
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
-  .projets {
+  .projets { /*titre FR/blabla*/
     position: fixed;
     left: 32px;
-    bottom:120px;
+    bottom:100px;
     z-index: 1;
     max-width: 200px;
   }
 
+
   .imagemenuprojet {
     margin-top: -10px;
   }
 
   .imagemenupropos {
     margin-top: -10px;
-    bottom: 10px;
   }
 
   .imagemenucontact {
-    bottom: 70px;
+    bottom: 200px;
     height: 100%;
     width : 100%;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 20px;
   }
+
 
   .menuprojets ul li {
     list-style: none;
-    text-transform: uppercase;
     cursor: pointer;
+    font-size: 15px;
   }
+
   .menuprojets ul li:hover {
     margin-left: 4px;
     transition: margin 0.5s;
-  }
-  .imagemenucontact:hover, .imagemenupropos:hover, .imagemenuprojet:hover {
-    opacity: 0.7;
-    transition: opacity 0.5s;
+    font-size: 15px;
   }
 
-  .imagemenuprojet {
-  text-transform: uppercase;
-  font-size: 10px;
+
+  .imagemenucontact:hover, .imagemenupropos:hover, .imagemenuprojet:hover, .paolinetitre:hover,
+  {
+    opacity: 0.7;
+    transition: opacity 0.2s;
   }
+
 
   .imagemenupropos {
   text-transform: uppercase;
   font-size: 10px;
-  }
-
-  .interieur {
-    position:absolute;
-    top: 0;
-    bottom:0;
-    overflow-y:scroll;
-    left: 16px;
-    right: -16px;
-    padding: 32px 0;
   }
 
   .navigation0 {
@@ -272,8 +307,18 @@
     margin-top: 10px;
   }
 
+  .interieur {
+    position:absolute;
+    top: 0;
+    bottom:0;
+    overflow-y:scroll;
+    left: 16px;
+    right: -16px;
+    padding: 32px 0;
+  }
+
   .bloc {
-    background: white;
+    background: grey;
     margin: auto;
     position: relative;
     left: -16px;
@@ -287,70 +332,254 @@
   margin-bottom:0px;
 }
 
-
-  .kan {
-  margin-top: 45px;
+  .courtfrench {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 100px;
+    font-size: 15px;
+    color: lightgrey;
   }
 
+
+  .demofrench {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 100px;
+    font-size: 15px;
+    color: lightgrey;
+  }
+
+  .mundofrench {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 100px;
+    font-size: 15px;
+    color: lightgrey;
+  }
+.soundeat1french {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.topcheffrench {
+margin-top: 30px;
+margin-left: 60px;
+margin-right: 100px;
+font-size: 15px;
+color: lightgrey;
+}
+
+.lettresfrench {
+margin-top: 30px;
+margin-left: 60px;
+margin-right: 100px;
+font-size: 15px;
+color: lightgrey;
+}
+
+.kandinskifrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.tacetfrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.pulitzerfrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.soundeat2french {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.mercifrench {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.fantomesfrench {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.relatosfrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.monomixfrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.stagefrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.mémoirefrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
+.kan {
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
+  }
+
+  .monomix {
+      margin-top: 107px;
+      margin-left: 60px;
+      margin-right: 100px;
+    }
+
+    .mémoire {
+        margin-top: 107px;
+        margin-left: 60px;
+        margin-right: 100px;
+      }
+
+    .stage {
+        margin-top: 107px;
+        margin-left: 60px;
+        margin-right: 100px;
+      }
+
   .tacet {
-  margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .pulitzer {
-  margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
+
+  }
+
+  .relatos {
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .soundeat2 {
-  margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .savoirfaire {
-    margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .formes {
-  margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
 
   .merci {
-  margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
+  }
+
+  .fantomes {
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .kan {
-    margin-top: 45px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .mots {
-    margin-top: 120px;
-    margin-left: 40px;
-    margin-right: 30px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .demo {
-  margin-top: 80px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .court {
-  margin-top: 80px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .soundeat {
-  margin-top: 80px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .mundo {
-  margin-top: 120px;
-  margin-left: 40px;
-  margin-right: 30px;
+  margin-top: 107px;
+  margin-left: 60px;
+  margin-right: 100px;
   }
 
   .poster {
-  margin-top: 80px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .atelier {
-  margin-top: 80px;
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
   }
 
   .bloc {
@@ -363,39 +592,18 @@
     align-items:center;
   }
 
-  h1 {
-  font-size: 25px;
-  font-family: 'Garamond';
-  src: url('oooooo-webfont.woff2') format('woff2'),
-       url('oooooo-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  }
-
-  h3 {
-    font-size: 50px;
-    font-family: 'Garamond';
-    src: url('oooooo-webfont.woff2') format('woff2'),
-         url('oooooo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
+/*
   h4 {
     font-size: 15px;
-    font-family: 'Garamond';
-    src: url('oooooo-webfont.woff2') format('woff2'),
+    font-family: 'Garamond', sans-serif;
+    src: url('oooooo-web.woff2') format('woff2'),
          url('oooooo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
+*/
 ul {
 margin-top: 0px;
 }
@@ -441,14 +649,23 @@ margin-top: 0px;
     display: none;
   }
 
-  .menuprojets {
+  .menuprojets { /*Texte description french*/
     position: fixed;
-    left:0px;
-    top:250px;
+    left:-7px;
+    bottom: 470px;
     background-color: none;
     width: 150px;
     height: 70px;
   }
+
+
+.fleche {
+  position: absolute;
+  left: 15px;
+  top: 79px;
+  width: 5%;
+}
+
 
   .ensemble .projets{
     display: block;
@@ -460,18 +677,21 @@ margin-top: 0px;
     display: block;
   }
 
+
+
   .apropos {
     position: fixed;
     left:32px;
-    top:350px;
+    bottom:505px;
     background-color: none;
     width: 150px;
     height: 70px;
+    font-size: 15px;
   }
   .deux {
     position: fixed;
     left: 32px;
-    bottom:85px;
+    bottom:60px;
     z-index: 1;
     max-width: 200px;
   }
@@ -492,31 +712,42 @@ margin-top: 0px;
 
   .contact {
       position: fixed;
-      left:32px;
-      top:375px;
+      left: 32px;
+      bottom: 390px;
       background-color: none;
       width: 150px;
       height: 70px;
+      font-size: 15px;
     }
 
 
       .quatre {
         position: fixed;
         left: 32px;
-        bottom:50px;
+        bottom:20px;
         z-index: 1;
         max-width: 200px;
       }
+
 
       .cv {
         position: fixed;
         left: 32px;
-        bottom:150px;
+        bottom:220px;
         z-index: 1;
         max-width: 200px;
-        font-size: 30px;
+        font-size: 20px;
       }
 
+      .cv2 {
+        position: fixed;
+        left:32px;
+        bottom: 150px;
+        background-color: none;
+        width: 150px;
+        height: 70px;
+        font-size: 15px;
+        }
       .dg {
           position: fixed;
           left:32px;
@@ -533,17 +764,20 @@ margin-top: 0px;
           cursor: pointer;
 
         }
+
           .trois .contact{
             display: none;
           }
 
-        .trois.open .contact{
-          display: block;
-        }
+          .trois.open .contact{
+            display: block;
+          }
+
 
         .menu-lien {
           display: none;
         }
+
         #left, #right {
           width: 50%;
         }
@@ -575,22 +809,24 @@ margin-top: 0px;
             bottom: 10px;
             }
 
+
            .deux /*à propos */ {
            left: 120px;
            bottom: 10px;
            }
 
-           .quatre /*contact*/ {
+           .quatre /*french*/ {
              left: 240px;
              bottom: 10px;
            }
+
 
            .cv /*cv*/ {
            left: 360px;
            bottom: 10px;
            }
             h3 {
-            font-size: 40px;
+            font-size: 50px;
             }
 
             h1 {
@@ -617,20 +853,9 @@ margin-top: 0px;
           .contact {
           top: 450px;
           left: 20px;
-          background-color: white;
+          background-color: grey;
           }
 
-          .menuprojets {
-          top: 360px;
-          left: -20px;
-          background-color: white;
-          }
-
-          .apropos {
-          top: 450px;
-          left:20px;
-          background-color: white;
-          }
           /*.menu section, .un, .deux, .menucontact, .projets, .menuprojets, .trois, .quatre {
             position:static;
           }

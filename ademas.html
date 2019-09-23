@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ademas</title>
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+</head>
+
+  <body>
+  <div id="left">
+    <div class="interieur">
+      <div class="vignettes">
+     <div class="bloc" id="p-savoirfaire-v">
+     <img  src="merci/e.png" alt="">
+     <img src="merci/b.png" alt="">
+     <img src="merci/c.png" alt="">
+     <img src="merci/d.png" alt="">
+     <img src="merci/e.png" alt="">
+     <img src="merci/f.png" alt="">
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="right">
+      <div class="savoirfaire"> <p> Además — Projet de diplôme
+      <br> </br>
+      Etude des différentes manières de dire le mot "merci".
+      Les fréquences sonores de 10 voix ont été modélisées puis ensuite
+      traduites en volume grâce à l'imprimante 3D. <br> </br> 01/2017 </p>
+      <a href="index.html"> <p> <— </p> </a>
+    </div>
+    </div>
+
+
+    <div class="pao">
+      <div class="paolinetitre"> <h3>  <a href="index.html">PAOLINE <p> SOTAR </p> </a> </h3>
+    </div> </div>
+
+    <nav class="menu">
+      <h3 class="menu-lien">MENU</h3>
+      <div class="contenu-menu">
+        <section class="ensemble">
+          <div class="projets">
+            <div class="imagemenuprojet"> <h1> INDEX </h1>
+          </div> </div>
+          <div class="menuprojets">
+            <ul>
+            <li id="p-kandinski-l"><a href="kandinski.html">Kandinsky</li> </a>
+            <li id="p-demo-l"><a href="demo.html">Demo</li> </a>
+            <li id="p-tacet-l"><a href="tacet.html">Tacet</li> </a>
+            <li id="p-pulitzer-l"><a href="pulitzer.html">Pulitzer</li></a>
+            <li id="p-merci-l"><a href="merci.html">Merci</li></a>
+            <li id="p-formes-l"><a href="formes.html">Formes</li> </a>
+            <li id="p-soundeat-l"><a href="soundeat1.html">SoundEat #1</li></a>
+            <li id="p-soundeat2-l"><a href="soundeat2.html">SoundEat #2</li></a>
+            <li id="p-poster-l"><a href="poster.html">Pornster</li></a>
+            <li id="p-mots-l"> <a href="lettres.html">Lettres libres</li> </a>
+            <li id="p-circuit-l"><a href="circuit.html">Court-circuit</li></a>
+            <li id="p-mundo-l"><a href="mundo.html">CCCB</li></a>
+            <li id="p-atelier-l"> <a href="topchef.html">TopChef </li></a>
+            <li id="p-savoirfaire-l"><a href="savoirfaire.html"> Savoir-faire</li></a>
+          </ul>
+          </div> </section>
+
+          <section class="trois">
+            <div class="quatre">
+            <div class="imagemenucontact"> <h1> contact </h1>
+          </div> </div>
+              <div class="contact">
+            <p>  <br> </br>
+              <p> +33 781056255 </p>
+              <p> <a href="mailto:paoline.sotar@gmail.com">Mail</a> </p>
+              <p> Lyon, FRANCE </p>
+              <br> </br>
+              <p> <a href="https://www.instagram.com/paolinestr/?hl=fr" target="_blank"> Instagram </a> </p>
+              <p> <a href="https://www.facebook.com/paoline.sotar" target="_blank"> Facebook </a> </p> </p>
+        </div>
+        </section>
+
+        <section class="un">
+          <div class="deux">
+          <div class="imagemenupropos"> <h1> about </h1>
+        </div> </div>
+
+          <div class="apropos">
+          <p> Designer graphique fraichement diplômée du master design graphique de Toulouse. </p>
+          <p>
+            <section class="cv2">
+            <a href="cv.pdf" target="_blank"> Open my CV </a> </p>
+         </div>
+        </section> </section>
+
+  </nav>
+  <script src="./script.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var l = document.querySelector('#left .interieur');
+    var r = document.querySelector('#right .interieur');
+    r.scrollBottom = r.scrollHeight - r.getBoundingClientRect().height;
+    l.addEventListener('scroll', function(e) {
+      var scrollPercent = ((l.scrollBottom / (l.scrollHeight - l.getBoundingClientRect().height)).toFixed(2) * 100);
+      var newScroll = Math.abs((r.getBoundingClientRect().height - r.scrollHeight) / 100 * (100 - scrollPercent));
+      r.scrollTop = newScroll;
+    });
+    r.addEventListener('scroll', function(e) {
+      var scrollPercent = ((r.scrollTop / (r.scrollHeight - r.getBoundingClientRect().height)).toFixed(2) * 100);
+      var newScroll = Math.abs((l.getBoundingClientRect().height - l.scrollHeight) / 100 * (100 - scrollPercent));
+      l.scrollTop = newScroll;
+    });
+  </script>
+  <body>
+
+  </body>
+</html>

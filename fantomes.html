@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FANTÔMES</title>
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+</head>
+
+  <body>
+    <div id="left">
+      <div class="interieur">
+        <div class="vignettes">
+      <div class="bloc" id="p-fantomes-v">
+      <img src="fantomes/09.jpg" alt="">
+      <img src="fantomes/10.jpg" alt="">
+      <img src="fantomes/11.jpg" alt="">
+      <img src="fantomes/12.jpg" alt="">
+      <img src="fantomes/13.jpg" alt="">
+      <img src="fantomes/14.jpg" alt="">
+      <img src="fantomes/15.jpg" alt="">
+      <img src="fantomes/16.jpg" alt="">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div id="right">
+        <div class="fantomes"> GHOSTS
+        <br> </br>
+        Series of goffering on the idea of ghost-image in complement of my master degree diploma.
+        The shapes have been made from an illustration session according to soundtracks listening.
+        <p>Format A4 and A5.
+        <br> </br>
+
+        <div class="fantomesfrench"> <p> FR / FANTÔMES
+          <br> </br>
+          Série de gaufrages sur le thème de l’image-fantôme en complément de mon diplôme de DSAA.
+          Les formes sont issues d’une séance d’illustrations d’après l’écoute de bandes sonores.
+          <p>Format A4 et A5.</p>
+      </div>
+      </div>
+
+      <div class="pao">
+        <div class="paolinetitre"> <h3>  <a href="index.html">PAOLINE <p> SOTAR </p> </a>
+          <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400&display=swap" rel="stylesheet"> </h3>
+      </div> </div>
+
+    <nav class="menu">
+      <h3 class="menu-lien">MENU</h3>
+      <div class="contenu-menu">
+        <section class="ensemble">
+          <div class="projets">
+            <div class="imagemenuprojet"> <h1> INDEX </h1>
+          </div> </div>
+          <div class="menuprojets">
+            <ul>
+
+            <li id="p-mundo-l"><a href="mundo.html">CCCB</li></a>
+            <li id="p-demo-l"><a href="demo.html">Demo</li> </a>
+            <li id="p-mémoire-l"> <a href="memoire.html"> Diploma</li></a>
+            <li id="p-mots-l"> <a href="lettres.html">Freed Letters</li> </a>
+            <li id="p-fantomes-l"> <a href="fantomes.html">Ghosts </li></a>
+            <li id="p-stage-l"> <a href="stage.html">Internship report </li></a>
+            <li id="p-kandinski-l"><a href="kandinski.html">Kandinsky</li> </a>
+            <li id="p-monomix-l"><a href="monomix.html">Monomix</li> </a>
+            <li id="p-pulitzer-l"><a href="pulitzer.html">Pulitzer</li></a>
+            <li id="p-relatos-l"><a href="relatos.html">Relatos Verdaderos</li></a>
+            <li id="p-formes-l"><a href="formes.html">Shapes</li> </a>
+            <li id="p-circuit-l"><a href="circuit.html">Short-circuit</li></a>
+            <li id="p-soundeat-l"><a href="soundeat1.html">SoundEat #1</li></a>
+            <li id="p-soundeat2-l"><a href="soundeat2.html">SoundEat #2</li></a>
+            <li id="p-tacet-l"><a href="tacet.html">Tacet</li> </a>
+            <li id="p-merci-l"><a href="merci.html">Thank You</li></a>
+            <li id="p-atelier-l"> <a href="topchef.html">TopChef </li></a>
+
+          </ul>
+          </div> </section>
+
+          <section class="trois">
+            <div class="quatre">
+            <div class="imagemenucontact"> <h1> contact </h1>
+          </div> </div>
+              <div class="contact">
+            <p>  <br> </br>
+              <p> For collaborations, questions, or to get in touch, feel free to contact me!</p>
+              <br>+33 781056255 </br>
+              <p> <a href="mailto:paoline.sotar@gmail.com">Mail</a> </p>
+              <p> Lyon, FRANCE </p>
+              <p> <a href="https://www.instagram.com/paolinestr/?hl=fr" target="_blank"> Instagram </a> </p>
+              <p> <a href="https://www.facebook.com/paoline.sotar" target="_blank"> Facebook </a> </p> </p>
+
+              <section class="cv2">
+              <a href="fr.pdf" target="_blank"> French resume </a> </p>
+              <a href="en.pdf" target="_blank"> English resume </a> </p>
+
+              </section>
+
+        </div>
+     </section>
+
+        <section class="un">
+          <div class="deux">
+          <div class="imagemenupropos"> <h1> about </h1>
+        </div> </div>
+
+          <div class="apropos">
+          <p> I'm a french graphic designer based in Lyon. Recently gratuated from a master degree in graphic design,
+          I'm focused on collaborative projects to share skills and ideas with other professionals.
+        Graphic design has to be curious, and it's today a powerfull tool to express ourselves and
+        create opportunities. I'm focused on cultural and ethics projects with an appetite to details and
+        printed objects. </p>
+          <p> </div>
+     </section>
+
+
+    </nav>
+
+    <script src="./script.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var l = document.querySelector('#left .interieur');
+      var r = document.querySelector('#right .interieur');
+      r.scrollBottom = r.scrollHeight - r.getBoundingClientRect().height;
+      l.addEventListener('scroll', function(e) {
+        var scrollPercent = ((l.scrollBottom / (l.scrollHeight - l.getBoundingClientRect().height)).toFixed(2) * 100);
+        var newScroll = Math.abs((r.getBoundingClientRect().height - r.scrollHeight) / 100 * (100 - scrollPercent));
+        r.scrollTop = newScroll;
+      });
+      r.addEventListener('scroll', function(e) {
+        var scrollPercent = ((r.scrollTop / (r.scrollHeight - r.getBoundingClientRect().height)).toFixed(2) * 100);
+        var newScroll = Math.abs((l.getBoundingClientRect().height - l.scrollHeight) / 100 * (100 - scrollPercent));
+        l.scrollTop = newScroll;
+      });
+    </script>
+  </body>
+</html>
