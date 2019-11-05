@@ -150,6 +150,10 @@
     margin-top: 45px;
   }
 
+  #p-ademas-v {
+    margin-top: 45px;
+  }
+
 
   .paolinetitre {
     position: fixed;
@@ -396,6 +400,14 @@ color: lightgrey;
   color: lightgrey;
 }
 
+.ademasfrench {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 15px;
+  color: lightgrey;
+}
+
 .pulitzerfrench {
   margin-top: 30px;
   margin-left: 60px;
@@ -485,6 +497,12 @@ color: lightgrey;
       }
 
   .tacet {
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-right: 100px;
+  }
+
+  .ademas {
     margin-top: 107px;
     margin-left: 60px;
     margin-right: 100px;
