@@ -51,6 +51,14 @@
     justify-content: flex-end;
 }
 
+video {
+  width:100%;
+  height:auto;
+  margin-top: 30px;
+  border:0px solid black;
+  justify-content: flex-end;
+}
+
   #left, #right {
     position:absolute;
     top: 0;
@@ -79,6 +87,9 @@
   }
 
   #p-merci-v {
+    margin-top: 45px;
+  }
+  #p-migra-v {
     margin-top: 45px;
   }
 
@@ -674,7 +685,7 @@ margin-top: 0px;
   .menuprojets { /*Texte description french*/
     position: fixed;
     left:-7px;
-    bottom: 470px;
+    bottom: 490px;
     background-color: none;
     width: 150px;
     height: 70px;
